@@ -1,8 +1,16 @@
 import 'src/core/puzzle_animator.dart';
 import 'src/flutter.dart';
 import 'src/puzzle_home_state.dart';
+import 'package:flutter/foundation.dart'
+    show debugDefaultTargetPlatformOverride;
 
-void main() => runApp(PuzzleApp());
+
+void main() {
+  // See https://github.com/flutter/flutter/wiki/Desktop-shells#target-platform-override
+  debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
+
+  runApp(PuzzleApp());
+}
 
 class PuzzleApp extends StatelessWidget {
   final int rows, columns;
