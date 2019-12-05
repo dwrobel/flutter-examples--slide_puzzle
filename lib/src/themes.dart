@@ -3,7 +3,7 @@ import 'theme_seattle.dart';
 import 'theme_simple.dart';
 
 const themes = [
-  ThemeSimple(),
   ThemeSeattle(),
+  ThemeSimple(),
   ThemePlaster(),
 ];
